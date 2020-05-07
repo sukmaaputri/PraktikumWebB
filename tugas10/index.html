@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="div" class="header">
+		<h1>To Do List</h1>
+		<input type="text" id="input" placeholder="Masukan list...">
+		<span onclick="newElement()" class="tambah">Tambah</span>
+	</div>
+
+	<ul id="cek">
+		<li>Tugas Praktikum PBW</li>
+		<li>Jogging</li>
+	</ul>
+
+	<script>
+		// menambah list
+		function newElement(){
+			var li = document.createElement("li");
+			var inputValue = document.getElementById("input"). value;
+			var t = document.createTextNode(inputValue);
+			li.appendChild(t);
+			if (inputValue === '') {
+				alert("Masukkan list terlebih dahulu!");
+			}else {
+				document.getElementById("cek").appendChild(li);
+			}
+			document.getElementById("input").value = "";
+
+			var span = document.createElement("SPAN");
+			var txt = document.createTextNode("\u00D7");
+			span.className = "hapus";
+			span.appendChild(txt);
+			li.appendChild(span);
+
+			for (i = 0; i < hapus.length; i++) {
+				hapus[i].onclick = function(){
+					var div = this.parentElement;
+					div.style.display = "none";
+				}
+			}
+		}
+
+		//ceklist
+		var list = document.querySelector('ul');
+		list.addEventListener('click', function(ev) {
+			if (ev.target.tagName === 'LI') {
+				ev.target.classList.toggle('checked');
+			}
+		}, false);
+
+		// 
+		var tanda = document.getElementsByTagName("LI");
+		var i;
+		for (i = 0; i < tanda.length; i++) {
+			var span = document.createElement("SPAN");
+			var txt = document.createTextNode("\u00D7");
+			span.className = "hapus";
+			span.appendChild(txt);
+			tanda[i].appendChild(span);
+		}
+
+		// menghapus
+		var hapus = document.getElementsByClassName("hapus");
+		var i;
+		for (i = 0; i < hapus.length; i++) {
+			hapus[i].onclick = function() {
+				var div = this.parentElement;
+				div.style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
