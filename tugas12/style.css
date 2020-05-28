@@ -1,0 +1,174 @@
+/*index*/
+h1{
+  text-align: center;
+  /*ketebalan font*/
+  font-weight: 300;
+}
+.tulisan_login{
+  text-align: center;
+  /*membuat semua huruf menjadi kapital*/
+  text-transform: uppercase;
+}
+ 
+.kotak_login{
+  width: 350px;
+  background: white;
+  /*meletakkan form ke tengah*/
+  margin: 80px auto;
+  padding: 30px 20px;
+  box-shadow: 0px 0px 100px 4px #d6d6d6;
+}
+.kotak_note{
+  width: 350px;
+  background: white;
+  /*meletakkan form ke tengah*/
+  margin: 80px auto;
+  padding: 30px 20px;
+  box-shadow: 0px 0px 100px 4px #d6d6d6;
+}
+.form_login{
+  /*membuat lebar form penuh*/
+  box-sizing : border-box;
+  width: 100%;
+  padding: 10px;
+  font-size: 11pt;
+  margin-bottom: 20px;
+}
+ 
+.tombol_login{
+  background: #2aa7e2;
+  color: white;
+  font-size: 11pt;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+
+
+/*halaman*/
+.wrap{
+  width: 100%;
+  height: 80%;
+}
+
+.wrap .kiri{
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+.wrap .kiri .logo{
+  width: 95%;
+  height: 30%;
+  border:1px solid black;
+  border-radius: 20px 0 0 0;
+}
+.wrap .kiri .judul{
+  width: 93%;
+  height: 17%;
+  background-color: blue;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding-left: 10px;
+}
+.wrap .kiri .menubar{
+  font-size: 16px;
+  border: 1px solid black;
+  width: 89%;
+  height: 23%;
+  padding: 3%;
+  text-align: left;
+}
+.logo img{
+  width: 100%;
+  height: auto;
+}
+p.dashed{
+  border-style: none none dashed none;
+  border-color: blue;
+  padding: 0 0 0 9px;
+}
+
+
+.wrap .kanan{
+  width: 80%;
+  height: 80%;
+  float: left;
+}
+.warp .kanan .header{
+  width: 90%;
+}
+.header img{
+  width: 95%;
+  height: 20%;
+  border-radius: 0 0 20px 0;
+}
+.kanan .header p{
+  position: absolute;
+    color: blue;
+    
+    font-size: 12px;
+    top: 8px;
+    right: 5%;
+}
+.kanan .header a{
+  position: absolute;
+    color: blue;
+    
+    font-size: 12px;
+    top: 8px;
+    right: 5%;
+}
+.wrap .kanan .menu{
+  width: 95%;
+  height: 20%; 
+  background: blue;
+}
+.wrap .kanan .menu ul{
+  padding: 0;
+  margin: 0;
+  background: blue;
+  overflow: hidden;
+}
+ .wrap .kanan .menu > ul > li{
+  float: left;
+ }
+.wrap .kanan .menu li a{
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+  display: inline-block;
+  color: white;
+}
+.wrap .kanan .desc{
+  width: 95%;
+  height: 50%;
+  border: 1px solid black;
+  margin: 5px 0 5px 0;
+
+}
+h2{
+  margin: 20px 0 10px 23px;
+  color: blue;
+}
+p.text{
+  margin: 15px 50px 20px 40px;
+}
+.desc img{
+  width: 150px;
+  height: 150px;
+  padding-left: 35px; 
+}
+
+.wrap .bawah{
+  width: 100%;
+  height: 18%;
+  float: left;
+  border-radius: 20px 0 20px 0;
+}
+p.bawah{
+    text-align: center;
+    background: blue;
+    border: 1px solid black;
+}
