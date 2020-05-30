@@ -1,0 +1,30 @@
+body{
+    background-color: aliceblue;
+}
+#menu ul {
+    background-color: #3498db;
+}
+#menu li a:hover {
+    color: #29aae3;
+}
+#sidebar li a:hover{
+    background-color: #3498db;
+}
+.populer{
+    background-color: #3498db;
+}
+.button{
+    background-color: #3498db;
+}
+#footer{
+    width: auto;
+    height: 70px;
+    background-color: #3498db;
+    border-radius: 8px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+#footer p {
+    color:white;
+    padding: 30px ;
+    text-align: center;
+}
